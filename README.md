@@ -33,8 +33,20 @@ This endpoint returns the 4 most relevant results for a submitted query.
 #### Parameters
 
 | Name | Data Type | Required / Optional | Description                  |
-|:-----|:----------|:--------------------|------------------------------|
+|:-----|:----------|:--------------------|:-----------------------------|
 | q    | string    | required            | Search term (e.g. "zapatos") |
+
+### Item Details
+
+GET `/api/items/:id`
+
+This endpoint returns detailed information of a requested product.
+
+#### Parameters
+
+| Name | Data Type | Required / Optional | Description      |
+|:-----|:----------|:--------------------|:-----------------|
+| id   | string    | required            | Item internal ID |
 
 
 ## Development log
@@ -49,3 +61,4 @@ This endpoint returns the 4 most relevant results for a submitted query.
 | 2021-01-09 |        120        | Development of `search` API endpoint                        |
 | 2021-01-09 |        30         | Dev tools and linting cleanup                               |
 | 2021-01-09 |        30         | Add endpoints project documentation                         |
+| 2021-01-09 |        40         | Development of `item` API endpoint                          |
