@@ -1,0 +1,23 @@
+.SearchBar {
+  display: flex;
+}
+
+.SearchBar input {
+  width        : 859px;
+  height       : 38px;
+  border       : none;
+  border-radius: 4px 0 0 4px;
+  box-sizing   : border-box;
+  padding      : 13px 15px;
+  font-size    : 16px;
+}
+
+.SearchBar button {
+  border             : none;
+  border-radius      : 0 2px 2px 0;
+  background         : var(--color-background) url('./search_icon.png') no-repeat;
+  background-size    : 17px 17px;
+  background-position: center;
+  height             : 38px;
+  width              : 42px;
+}
