@@ -62,3 +62,6 @@ This endpoint returns detailed information of a requested product.
 | 2021-01-09 |        30         | Dev tools and linting cleanup                               |
 | 2021-01-09 |        30         | Add endpoints project documentation                         |
 | 2021-01-09 |        40         | Development of `item` API endpoint                          |
+| 2021-01-09 |        30         | React client app setup                                      |
+| 2021-01-09 |        30         | Client app configuration                                    |
+| 2021-01-09 |        60         | Header component                                            |
