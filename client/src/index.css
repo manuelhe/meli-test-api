@@ -1,8 +1,10 @@
 :root {
-  --color-text          : #333333;
-  --color-text-secondary: #666666;
-  --color-background    : #eeeeee;
-  --color-brand         : #ffe600;
+  --color-text              : #333333;
+  --color-text-secondary    : #666666;
+  --color-background        : #eeeeee;
+  --color-content-background: #ffffff;
+  --color-brand             : #ffe600;
+  --content-width           : 980px;
 }
 
 body {
