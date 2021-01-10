@@ -1,7 +1,8 @@
 :root {
-  --color-text      : #333333;
-  --color-background: #eeeeee;
-  --color-brand     : #ffe600;
+  --color-text          : #333333;
+  --color-text-secondary: #666666;
+  --color-background    : #eeeeee;
+  --color-brand         : #ffe600;
 }
 
 body {
