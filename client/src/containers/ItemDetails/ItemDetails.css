@@ -1,0 +1,63 @@
+.ItemsDetails {
+  background           : var(--color-content-background);
+  border-radius        : 4px;
+  box-sizing           : border-box;
+  margin               : 0 auto;
+  padding              : 32px;
+  width                : var(--content-width);
+  display              : grid;
+  grid-template-columns: 7fr 3fr;
+  grid-template-rows   : repeat(2, 1fr);
+}
+
+.ItemsDetails figure {
+  margin: 0;
+  width : 680px;
+}
+
+.ItemsDetails figure img {
+  max-width: 100%;
+}
+
+.ItemsDetails .item-info h2 {
+  font-size: 24px;
+  margin   : 0 0 32px;
+}
+
+.ItemsDetails .item-info h3 {
+  font-weight: normal;
+  font-size  : 42px;
+  margin     : 0 0 32px;
+}
+
+.ItemsDetails .item-info sup {
+  font-size: 21px;
+}
+
+.ItemsDetails .item-info h4 {
+  font-weight: normal;
+  font-size  : 14px;
+  margin     : 0 0 16px;
+}
+
+.ItemsDetails .main-action {
+  background   : var(--color-main-action);
+  color        : var(--color-content-background);
+  border       : none;
+  width        : 100%;
+  border-radius: 4px;
+  font-size    : 16px;
+  padding      : 12px 0;
+}
+
+.ItemsDetails .item-description h2 {
+  font-size  : 28px;
+  font-weight: normal;
+  margin     : 0 0 32px;
+}
+
+.ItemsDetails .item-description p {
+  font-size: 16px;
+  margin   : 0 0 32px;
+  color    : var(--color-text-content);
+}

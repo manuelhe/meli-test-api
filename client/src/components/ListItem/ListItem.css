@@ -1,0 +1,60 @@
+.ListItem {
+  border-bottom: 1px solid var(--color-background);
+}
+
+.ListItem:last-child {
+  border-bottom: none;
+}
+
+.ListItem .link {
+  display        : flex;
+  text-decoration: none;
+  color          : var(--color-text);
+  padding        : 16px 0;
+}
+
+
+.ListItem figure {
+  border-radius: 20px;
+  margin       : 0 16px;
+  height       : 180px;
+  width        : 180px;
+  overflow     : hidden;
+}
+
+.ListItem figure img {
+  height: 100%;
+}
+
+.ListItem .details {
+  padding     : 16px;
+  width       : 392px;
+  margin-right: 176px;
+}
+
+.ListItem .details h2 {
+  font-weight: normal;
+  font-size  : 24px;
+  margin     : 0 0 32px;
+}
+
+.ListItem .details h3 {
+  font-weight: normal;
+  font-size  : 18px;
+  margin     : 0;
+}
+
+.ListItem .free-shipping {
+  background-image: url('./free_shipping.png');
+  background-size : cover;
+  display         : inline-block;
+  width           : 18px;
+  height          : 18px;
+  margin-left     : 11px;
+}
+
+.ListItem .location {
+  font-size  : 12px;
+  padding-top: 16px;
+  width      : 176px;
+}
