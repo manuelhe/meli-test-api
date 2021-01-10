@@ -1,9 +1,11 @@
 :root {
   --color-text              : #333333;
   --color-text-secondary    : #666666;
+  --color-text-content      : #999999;
   --color-background        : #eeeeee;
   --color-content-background: #ffffff;
   --color-brand             : #ffe600;
+  --color-main-action       : #3483fa;
   --content-width           : 980px;
 }
 
@@ -16,5 +18,4 @@ body {
     sans-serif;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height            : 16px;
 }

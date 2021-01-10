@@ -1,5 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
+import ItemsDetails from './containers/ItemDetails/ItemDetails';
 import ListItems from './containers/ListItems/ListItems';
 
 const categories = [
@@ -16,16 +17,10 @@ function App() {
       <Header categories={categories}/>
       <Switch>
           <Route exact path='/items' component={ListItems}/>
-          <Route path='/items/:id' component={ItemDetails}/>
+          <Route path='/items/:id' component={ItemsDetails}/>
       </Switch>
     </div>
   );
 }
-
-const ItemDetails = () => {
-  return (
-    <h1>ItemDetails</h1>
-  );
-};
 
 export default App;

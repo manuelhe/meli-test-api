@@ -67,3 +67,4 @@ This endpoint returns detailed information of a requested product.
 | 2021-01-09 |        60         | Header component                                            |
 | 2021-01-10 |        30         | CategoryPath component                                      |
 | 2021-01-10 |        60         | ListItem and ListItems components                           |
+| 2021-01-10 |        40         | ItemDetails component                                       |
