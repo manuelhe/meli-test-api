@@ -42,6 +42,7 @@ const dataParsing = (data) => {
       picture: data.results[i].thumbnail,
       condition: data.results[i].condition,
       free_shipping: data.results[i].shipping.free_shipping,
+      location: data.results[i].address.state_name
     };
     resp.push(parsedItem);
   }
