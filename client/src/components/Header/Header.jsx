@@ -1,13 +1,20 @@
 import { Link } from 'react-router-dom';
-import SearchBar from '../SearchBar/SearchBar';
 import { useHistory } from 'react-router-dom';
+import { useRecoilValueLoadable, useSetRecoilState } from 'recoil';
+import SearchBar from '../SearchBar/SearchBar';
 import CategoryPath from '../CategoryPath/CategoryPath';
+import { itemsState } from '../../store/items.store';
+import { currentCategoriesQuery } from '../../store/items.selector';
 import './Header.css';
 
-const Header = ({categories}) => {
+const Header = () => {
   const history = useHistory();
-  const search = (val) => {
-    history.push(`/items?q=${val}`)
+  const setCurrentItems = useSetRecoilState(itemsState);
+  const categories = useRecoilValueLoadable(currentCategoriesQuery);
+  
+  const search = (searchString) => {
+    history.push(`/items?q=${searchString}`);
+    setCurrentItems(searchString);
   };
 
   return (
@@ -18,7 +25,7 @@ const Header = ({categories}) => {
           <SearchBar searchCallback={search}/>
         </div>
     </header>
-    {categories && <CategoryPath items={categories} />}
+    {categories.state === 'hasValue' && <CategoryPath items={categories.getValue()} />}
     </>
   );
 }
