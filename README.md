@@ -20,7 +20,15 @@ $ yarn
 $ npm run start
 ```
 
-Then, the server is available at: `http://localhost:3000/`
+Then, the server is available at: `http://localhost:5000/`
+
+## Building the client and serving the application
+
+```bash
+$ npm run setup && npm run start
+```
+
+These commands will install the dependencies and build the client application. After that, the main server will be started and you will be able to navigate it at: `http://localhost:5000/`
 
 ## Endpoints documentation
 
@@ -70,3 +78,4 @@ This endpoint returns detailed information of a requested product.
 | 2021-01-10 |        40         | ItemDetails component                                       |
 | 2021-01-10 |        120        | Data retriving and state management with `recoil`           |
 | 2021-01-10 |        40         | Data wiring of Item Details                                 |
+| 2021-01-10 |        30         | Minor adjusts and final test                                |
