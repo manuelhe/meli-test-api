@@ -51,6 +51,7 @@
 
 .ItemsDetails .item-description {
   margin-top: 64px;
+  overflow  : auto;
 }
 
 .ItemsDetails .item-description h2 {
