@@ -1,5 +1,5 @@
 import { selector, selectorFamily } from 'recoil';
-import { itemsState } from './items.store';
+import { itemsState } from './stores';
 
 const itemsQuery = selectorFamily({
   key: 'itemsQuery',
